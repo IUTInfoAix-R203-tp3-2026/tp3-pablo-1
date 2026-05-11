@@ -27,19 +27,16 @@ class AnneesBissextilesTest {
 
   // ========= Tests 1 à 3 : poser le terrain =========
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void l_annee_2021_n_est_pas_bissextile() {
     assertThat(AnneesBissextiles.estBissextile(2021)).isFalse();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void l_annee_2023_n_est_pas_bissextile() {
     assertThat(AnneesBissextiles.estBissextile(2023)).isFalse();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void l_annee_2025_n_est_pas_bissextile() {
     assertThat(AnneesBissextiles.estBissextile(2025)).isFalse();
@@ -47,7 +44,6 @@ class AnneesBissextilesTest {
 
   // ========= Tests 4 à 6 : introduction de la règle "divisible par 4" =========
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void l_annee_2020_est_bissextile() {
     assertThat(AnneesBissextiles.estBissextile(2020)).isTrue();
